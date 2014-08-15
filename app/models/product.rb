@@ -1,5 +1,4 @@
 class Product < ActiveRecord::Base
-
   scope :latest, -> { order(:updated_at).last }
 
   has_many :line_items
@@ -13,7 +12,6 @@ class Product < ActiveRecord::Base
     message: 'must be a URL for GIF, JPG or PNG image.'
   }
 
-
   private
 
   def ensure_not_referenced_by_any_line_item
@@ -24,5 +22,4 @@ class Product < ActiveRecord::Base
       return false
     end
   end
-
 end
