@@ -38,6 +38,10 @@ group :development do
   gem 'rubocop', require: false
 end
 
+group :test do
+  gem 'codeclimate-test-reporter', require: nil
+end
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
