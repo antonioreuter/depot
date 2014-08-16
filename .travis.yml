@@ -9,4 +9,6 @@ branches:
 gemfile:
   - Gemfile
 
-CODECLIMATE_REPO_TOKEN=d453085dec701121dc0cfa5f3082241412f39b961a8822172122c73bc75ddd45 
+addons:
+  code_climate:
+    repo_token: d453085dec701121dc0cfa5f3082241412f39b961a8822172122c73bc75ddd45
