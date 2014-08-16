@@ -32,13 +32,13 @@ gem 'coffee-rails', '~> 4.0.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0',          group: :doc
 
-group :development do
+group :development, :test do
   gem 'spring'
-  gem 'pry', '~> 0.10.0'
   gem 'rubocop', require: false
-end
-
-group :test do
+  gem 'pry'
+  gem 'pry-nav'
+  gem 'pry-remote'
+  gem 'pry-stack_explorer'
   gem 'codeclimate-test-reporter', require: nil
 end
 
